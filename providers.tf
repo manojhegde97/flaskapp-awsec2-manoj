@@ -1,5 +1,3 @@
-
-
 terraform {
   required_version = "1.5.1"
   required_providers {
@@ -17,7 +15,7 @@ provider "aws" {
 # Using remote backend
 terraform {
   backend "s3" {
-    bucket = "my-backend-devops101-terraform"
+    bucket = "flaskappbackendnew"
     key    = "flaskappawsec2/tfstate"
     region = "ap-south-1"
   }

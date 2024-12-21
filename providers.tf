@@ -12,6 +12,8 @@ provider "aws" {
   region = "ap-south-1"
 }
 
+# Using remote backend
+terraform {
   backend "s3" {
     bucket = "flaskappbackendnew"
     key    = "flaskappawsec2/tfstate"

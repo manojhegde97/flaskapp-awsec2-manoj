@@ -12,4 +12,11 @@ provider "aws" {
   region = "ap-south-1"
 }
 
+  backend "s3" {
+    bucket = "flaskappbackendnew"
+    key    = "flaskappawsec2/tfstate"
+    region = "ap-south-1"
+  }
+}
+
 

@@ -1,7 +1,7 @@
 # Public ec2
 resource "aws_instance" "private" {
   # checkov:skip=CKV_AWS_126:skiping it
-  ami                    = "ami-0fd05997b4dff7aac"
+  ami                    = data.aws_ami.amazon_linux.id
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.public.id
   iam_instance_profile   = aws_iam_instance_profile.ec2_profile.name

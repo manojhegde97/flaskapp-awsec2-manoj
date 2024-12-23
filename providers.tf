@@ -17,7 +17,7 @@ terraform {
   backend "s3" {
     bucket = "flaskappbackendnew"
     key    = "flaskappawsec2/tfstate"
-    region = "ap-south-1"
+    region = "us-west-2"
   }
 }
 
